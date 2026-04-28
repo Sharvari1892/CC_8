@@ -7,7 +7,7 @@ phases:
       - apt-get install -y zip
   pre_build:
     commands:
-      - bandit -r . -f txt || true
+      - bandit -r . -f txt 
   build:
     commands:
       - zip -r function.zip .
